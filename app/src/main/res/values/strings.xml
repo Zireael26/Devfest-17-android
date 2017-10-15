@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Devfest \'17</string>
+    <string name="about_brief">Google Developers Group is an initiative by Google
+        around the world with a goal of connecting developers and GDG VIT is a part of this.</string>
+    <string name="about_subtitle">Code.Create.Connect</string>
+    <string name="about_name">GDG VIT Vellore</string>
+
+</resources>

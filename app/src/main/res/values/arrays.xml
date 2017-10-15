@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Timeline</item>
+        <item>FAQs</item>
+        <item>Sponsors</item>
+        <item>About</item>
+        <item />
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_timeline_black_24dp</item>
+        <item>@drawable/ic_faq_24dp</item>
+        <item>@drawable/ic_local_atm_black_24dp</item>
+        <item>@drawable/ic_about_black_24dp</item>
+        <item>0</item>
+        <item>@drawable/ic_logout_black_24dp</item>
+    </array>
+
+</resources>

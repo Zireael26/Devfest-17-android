@@ -13,7 +13,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="140dp"
         android:layout_centerInParent="true"
         android:background="@drawable/faq_shape_bg"
         android:orientation="horizontal">
@@ -27,11 +27,13 @@
             android:background="@drawable/ic_ans_white_48dp" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="36dp"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
+                android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="4dp">
 
             <TextView
                 android:id="@+id/answerText"
@@ -41,8 +43,7 @@
                 android:gravity="center_vertical"
                 android:text="answer goes here"
                 android:textColor="#000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 

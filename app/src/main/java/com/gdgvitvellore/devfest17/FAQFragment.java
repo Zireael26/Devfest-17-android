@@ -74,12 +74,11 @@ public class FAQFragment extends Fragment {
                 " will have 2 parts, a management part and a technical part.",
                 R.drawable.ic_ques_white_48dp, R.drawable.ic_ans_white_48dp));
         faqList.add(new FAQ("I am at the event. What do I do?", "Got your team? Great! Brainstorm" +
-                " and come up with an idea to be presented to our mentor team. They will visit you" +
-                " to hear out your idea and plan of action. they will provide you with suggestions" +
-                " for further course of action. You can brainstorm across multiple domains," +
-                " but your final idea should correspond to only one domain. Avoid switching ideas" +
-                " because it may lead to you falling behind your peers.", R.drawable.ic_ques_white_48dp,
-                R.drawable.ic_ans_white_48dp));
+                " and come up with an idea to be presented to our mentor team. When they visit you" +
+                " to hear out your idea and plan of action, they will provide you with suggestions." +
+                " You can brainstorm across multiple domains, but your final idea should" +
+                " correspond to only one domain. Avoid switching ideas because it may lead to you" +
+                " falling behind.", R.drawable.ic_ques_white_48dp, R.drawable.ic_ans_white_48dp));
         faqList.add(new FAQ("I have started working on an idea. Now what?", "Start working on" +
                 " making a model for your idea. You don’t necessarily need to code, but it is" +
                 " accepted nonetheless. Mentors will assist you with your implementation, clarify" +
@@ -94,9 +93,7 @@ public class FAQFragment extends Fragment {
                 "●\tthe resources you would require, \n" +
                 "●\tyour optimization measures for your business model and your execution method. \n" +
                 "For starters, methods of optimization would include doing a SWOT or Cost-Benefit " +
-                "analysis of your model, your execution method would consider your market and the" +
-                " demographics of your target audience.", R.drawable.ic_ques_white_48dp,
-                R.drawable.ic_ans_white_48dp));
+                "analysis of your model.", R.drawable.ic_ques_white_48dp, R.drawable.ic_ans_white_48dp));
         faqList.add(new FAQ("What do you mean by technical aspect?", "The technical part would" +
                 " describe \n" +
                 "●\tapproach used to solve the problem\n" +
@@ -106,8 +103,7 @@ public class FAQFragment extends Fragment {
                 R.drawable.ic_ans_white_48dp));
         faqList.add(new FAQ("What are the Judging parameters?", "A team comprising of GDG members" +
                 " will evaluate your performance according to the criteria mentioned in the Rules " +
-                "of Ideathon (which will be provided to you) to be announced during the hack, after" +
-                " the pitch(remove this?) and then declare the results. The top teams would be " +
+                "of Ideathon (which will be provided to you) and declare the results. The top teams would be " +
                 "selected to pitch their idea the next evening in front of a panel of judges who" +
                 " will decide the eventual winner.", R.drawable.ic_ques_white_48dp,
                 R.drawable.ic_ans_white_48dp));

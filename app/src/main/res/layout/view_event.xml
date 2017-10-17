@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="72dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <ImageView
         android:id="@+id/event_image"
         android:layout_width="wrap_content"
         android:layout_height="240dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
         android:scaleType="centerInside" />
 
     <LinearLayout
@@ -27,7 +33,7 @@
             android:fontFamily="sans-serif-light"
             android:textAlignment="center"
             android:textColor="@color/accent"
-            android:textSize="24sp"
+            android:textSize="20sp"
             tools:text="Opening speech and introduction" />
         <!--android:textColor="@color/colorAccentGrad"/>-->
 
@@ -35,7 +41,7 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="24dp" />
+        android:layout_height="8dp" />
 
     <TextView
         android:id="@+id/event_description"
@@ -50,6 +56,6 @@
     <Space
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1.2" />
 
-</merge>
+</LinearLayout>

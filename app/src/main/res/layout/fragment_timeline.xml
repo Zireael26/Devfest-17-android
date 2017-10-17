@@ -26,7 +26,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="96dp"
+                android:layout_height="82dp"
                 android:background="@color/primary" />
             <!--android:background="@drawable/action_bar_bg" />-->
 
@@ -39,6 +39,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="38dp" />
+        android:layout_marginBottom="24dp" />
 
 </FrameLayout>

@@ -132,7 +132,7 @@ public class SponsorFragment extends Fragment implements DiscreteScrollView.OnIt
 
                 CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder()
                         .addDefaultShareMenuItem()
-                        .setToolbarColor(ContextCompat.getColor(rootView.getContext(), R.color.colorPrimary))
+                        .setToolbarColor(ContextCompat.getColor(rootView.getContext(), R.color.colorPrimaryGrad))
                         .setShowTitle(true)
 //                        .setCloseButtonIcon(backArrow)
                         .build();

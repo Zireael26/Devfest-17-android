@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
 
 
     private static final int POS_TIMELINE = 0;
-    private static final int POS_TEAM = 1;
+    private static final int POS_FAQS = 1;
     private static final int POS_SPONSORS = 2;
     private static final int POS_ABOUT = 3;
-    private static final int POS_LOGOUT = 5;
+    private static final int POS_EXIT = 5;
 
     private String[] screenTitles;
     private Drawable[] screenIcons;
@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
 
         DrawerAdapter adapter = new DrawerAdapter(Arrays.asList(
                 createItemFor(POS_TIMELINE).setChecked(true),
-                createItemFor(POS_TEAM),
+                createItemFor(POS_FAQS),
                 createItemFor(POS_SPONSORS),
                 createItemFor(POS_ABOUT),
                 new SpaceItem(48),
-                createItemFor(POS_LOGOUT)));
+                createItemFor(POS_EXIT)));
         adapter.setListener(this);
 
         RecyclerView list = findViewById(R.id.list);
@@ -73,13 +73,13 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
     public void onItemSelected(int position) {
         Fragment selectedScreen = null;
         switch (position) {
-            case POS_LOGOUT:
+            case POS_EXIT:
                 finish();
                 break;
             case POS_TIMELINE:
                 selectedScreen = TimelineFragment.newInstance();
                 break;
-            case POS_TEAM:
+            case POS_FAQS:
                 selectedScreen = FAQFragment.newInstance();
                 break;
             case POS_SPONSORS:
@@ -106,10 +106,14 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
 
     private DrawerItem createItemFor(int position) {
         return new SimpleItem(screenIcons[position], screenTitles[position])
-                .withIconTint(color(R.color.textColorSecondary))
-                .withTextTint(color(R.color.textColorPrimary))
-                .withSelectedIconTint(color(R.color.colorAccent))
-                .withSelectedTextTint(color(R.color.colorAccent));
+                .withIconTint(color(R.color.primary_text))
+                .withTextTint(color(R.color.primary_text))
+                .withSelectedIconTint(color(R.color.accent))
+                .withSelectedTextTint(color(R.color.accent));
+//                .withIconTint(color(R.color.textColorSecondaryGrad))
+//                .withTextTint(color(R.color.textColorPrimaryGrad))
+//                .withSelectedIconTint(color(R.color.colorAccentGrad))
+//                .withSelectedTextTint(color(R.color.colorAccentGrad));
     }
 
     private String[] loadScreenTitles() {
@@ -127,6 +131,10 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
         }
         ta.recycle();
         return icons;
+    }
+
+    private String getEmojiByUnicode(int unicode) {
+        return new String(Character.toChars(unicode));
     }
 
     @ColorInt

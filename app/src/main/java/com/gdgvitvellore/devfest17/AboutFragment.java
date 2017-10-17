@@ -54,16 +54,18 @@ public class AboutFragment extends Fragment {
                 .addTwitterLink("gdgvit")
                 .addGooglePlusLink("+gdgvitvellore")
                 .addMoreFromMeAction("GDG VIT Vellore")
+                .addInstagramLink("gdgvitvellore")
                 .addFiveStarsAction()
                 .setVersionNameAsAppSubTitle()
                 .addShareAction(R.string.app_name)
                 .setWrapScrollView(true)
                 .setLinksAnimated(true)
                 .setShowAsCard(true)
-                .setDividerColor(R.color.colorAccent)
-                .setNameColor(R.color.textColorPrimary)
-                .setSubTitleColor(R.color.textColorPrimary)
-                .setIconColor(R.color.textColorPrimary)
+                .setDividerColor(R.color.accent)
+                .setNameColor(R.color.textColorPrimaryGrad)
+                .setSubTitleColor(R.color.textColorPrimaryGrad)
+                .setIconColor(R.color.textColorPrimaryGrad)
+                .setPhoto(R.drawable.logo_gdg)
                 .build();
 
         aboutRelativeLayout.addView(view, params);

@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_margin="6dp"
+        android:layout_margin="4dp"
         android:background="?android:selectableItemBackground"
         android:clickable="true">
 
@@ -37,10 +37,10 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="16dp"
             android:adjustViewBounds="true"
-            android:padding="12dp"
+            android:padding="24dp"
             android:scaleType="centerInside"
             android:src="@drawable/line_drawable_liftoff"
-            android:tint="@color/grayIconTint" />
+            android:tint="@color/grayIconTintGrad" />
 
     </FrameLayout>
 

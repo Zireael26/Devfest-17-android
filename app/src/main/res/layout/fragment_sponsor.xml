@@ -19,7 +19,7 @@
         android:layout_gravity="center_horizontal"
         android:fontFamily="sans-serif-light"
         android:textColor="@android:color/black"
-        android:textSize="20sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         tools:text="Balasmiq" />
 
@@ -32,7 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/accent"
+        android:textSize="18sp"
         android:textStyle="bold"
         tools:text="Title Sponsor" />
 
@@ -70,7 +71,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:src="@drawable/ic_arrow_back_white_24dp"
-            android:tint="@color/sponsorGallerySecondary" />
+            android:tint="@color/sponsorGallerySecondaryGrad" />
 
         <Space
             android:layout_width="16dp"
@@ -82,7 +83,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_website_black_24dp"
             android:tint="@android:color/white"
-            app:rippleColor="@color/sponsorGalleryFabRipple"
+            app:rippleColor="@color/sponsorGalleryFabRippleGrad"
             app:useCompatPadding="true" />
 
         <Space
@@ -96,7 +97,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:src="@drawable/ic_arrow_forward_white_24dp"
-            android:tint="@color/sponsorGallerySecondary" />
+            android:tint="@color/sponsorGallerySecondaryGrad" />
 
     </LinearLayout>
 

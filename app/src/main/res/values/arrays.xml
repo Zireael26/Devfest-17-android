@@ -7,7 +7,7 @@
         <item>Sponsors</item>
         <item>About</item>
         <item />
-        <item>Log Out</item>
+        <item>Exit</item>
     </string-array>
 
     <array name="ld_activityScreenIcons">

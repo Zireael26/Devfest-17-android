@@ -1,18 +1,28 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Gradient application theme. -->
+    <style name="GradientAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorControlNormal">#F0F5F5F5</item>
         <item name="android:textColorPrimary">#F0F5F5F5</item>
-
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimaryGrad</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkGrad</item>
+        <item name="colorAccent">@color/colorAccentGrad</item>
     </style>
 
     <style name="ClickableImageView">
         <item name="android:clickable">true</item>
         <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+
+
+    <!-- New Website like theme. -->
+    <style name="WebsiteAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorControlNormal">#F0FFFFFF</item>
     </style>
 
 </resources>

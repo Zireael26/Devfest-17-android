@@ -35,7 +35,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        int iconTint = ContextCompat.getColor(holder.itemView.getContext(), R.color.grayIconTint);
+        int iconTint = ContextCompat.getColor(holder.itemView.getContext(), R.color.grayIconTintGrad);
         Event event = data.get(position);
         holder.imageView.setImageResource(event.getEventLineDrawable());
 //        Glide.with(holder.itemView.getContext())
@@ -90,8 +90,8 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
                     .withEndAction(new Runnable() {
                         @Override
                         public void run() {
-                            textView.setTextColor(ContextCompat.getColor(imageView.getContext(), R.color.grayIconTint));
-                            imageView.setColorFilter(ContextCompat.getColor(imageView.getContext(), R.color.grayIconTint));
+                            textView.setTextColor(ContextCompat.getColor(imageView.getContext(), R.color.grayIconTintGrad));
+                            imageView.setColorFilter(ContextCompat.getColor(imageView.getContext(), R.color.grayIconTintGrad));
                             textView.setTextSize(12);
                         }
                     })

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/faq_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flipDuration="300"
+        app:flipOnTouch="false">
+
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/qna_card_back" />
+
+        <!-- Front Layout Goes Here -->
+        <include layout="@layout/qna_card_front" />
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</LinearLayout>

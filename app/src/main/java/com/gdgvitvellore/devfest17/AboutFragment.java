@@ -63,8 +63,6 @@ public class AboutFragment extends Fragment {
                 .setShowAsCard(true)
                 .setDividerColor(R.color.accent)
                 .setNameColor(R.color.textColorPrimaryGrad)
-                .setSubTitleColor(R.color.textColorPrimaryGrad)
-                .setIconColor(R.color.textColorPrimaryGrad)
                 .setPhoto(R.drawable.cirularlogo)
                 .setCover(R.drawable.rectangularshit)
                 .build();

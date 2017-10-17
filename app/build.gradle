@@ -13,8 +13,24 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a', 'mips', 'arm64-v8a', 'x86_64'
+            universalApk false
+        }
+    }
+    project.ext.versionCodes = ['armeabi-v7a': 6, 'arm64-v8a': 7, 'mips': 8, 'x86': 9, 'x86_64': 10]
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.versionCodeOverride =
+                    project.ext.versionCodes.get(output.getFilter(com.android.build.OutputFile.ABI), 0) * 1000 + android.defaultConfig.versionCode
         }
     }
 }

@@ -115,6 +115,7 @@ public class FAQFragment extends Fragment {
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(rootView.getContext());
+
         faqRecyclerView.setLayoutManager(layoutManager);
         faqRecyclerView.setHasFixedSize(true);
 

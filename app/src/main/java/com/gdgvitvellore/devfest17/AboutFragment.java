@@ -65,7 +65,8 @@ public class AboutFragment extends Fragment {
                 .setNameColor(R.color.textColorPrimaryGrad)
                 .setSubTitleColor(R.color.textColorPrimaryGrad)
                 .setIconColor(R.color.textColorPrimaryGrad)
-                .setPhoto(R.drawable.logo_gdg)
+                .setPhoto(R.drawable.cirularlogo)
+                .setCover(R.drawable.rectangularshit)
                 .build();
 
         aboutRelativeLayout.addView(view, params);

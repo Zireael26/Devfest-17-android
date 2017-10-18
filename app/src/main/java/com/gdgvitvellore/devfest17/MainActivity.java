@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
     private static final int POS_FAQS = 1;
     private static final int POS_SPONSORS = 2;
     private static final int POS_ABOUT = 3;
-    private static final int POS_EXIT = 5;
+
 
     private String[] screenTitles;
     private Drawable[] screenIcons;
@@ -57,15 +57,13 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
                 createItemFor(POS_FAQS),
                 createItemFor(POS_SPONSORS),
                 createItemFor(POS_ABOUT),
-                new SpaceItem(48),
-                createItemFor(POS_EXIT)));
+                new SpaceItem(48)));
         adapter.setListener(this);
 
         RecyclerView list = findViewById(R.id.list);
         list.setNestedScrollingEnabled(false);
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
-
         adapter.setSelected(POS_TIMELINE);
     }
 
@@ -73,9 +71,6 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
     public void onItemSelected(int position) {
         Fragment selectedScreen = null;
         switch (position) {
-            case POS_EXIT:
-                finish();
-                break;
             case POS_TIMELINE:
                 selectedScreen = TimelineFragment.newInstance();
                 break;

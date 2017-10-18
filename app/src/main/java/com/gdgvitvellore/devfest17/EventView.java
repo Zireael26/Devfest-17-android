@@ -83,7 +83,7 @@ public class EventView extends LinearLayout {
             case D23:
                 return R.drawable.hack;
             case D24:
-                return R.drawable.pizza;
+                return R.drawable.chicken_dinner;
             case D25:
                 return R.drawable.registration;
             case D26:

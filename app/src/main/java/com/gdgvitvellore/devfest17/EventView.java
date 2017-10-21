@@ -10,8 +10,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-
 public class EventView extends LinearLayout {
 
     private TextView eventDescription;
@@ -50,13 +48,14 @@ public class EventView extends LinearLayout {
         Timeline timeline = event.getEventTitle();
         eventDescription.setText(timeline.getDisplayName());
         eventName.setText(event.getEventDescription());
-        Glide.with(getContext()).load(timelineToIcon(timeline)).into(eventImage);
-        invalidate();
+        eventImage.setImageResource(timelineToIcon(timeline));
+//        Glide.with(getContext()).load(timelineToIcon(timeline)).into(eventImage);
+//        invalidate();
 
         eventImage.animate()
                 .scaleX(1f).scaleY(1f)
                 .setInterpolator(new AccelerateDecelerateInterpolator())
-                .setDuration(150)
+                .setDuration(100)
                 .start();
     }
 

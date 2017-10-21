@@ -1,4 +1,19 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
 
 android {
     compileSdkVersion 26
@@ -18,7 +33,7 @@ android {
         }
     }
 
-    splits {
+    /*splits {
         abi {
             enable true
             reset()
@@ -32,7 +47,7 @@ android {
             output.versionCodeOverride =
                     project.ext.versionCodes.get(output.getFilter(com.android.build.OutputFile.ABI), 0) * 1000 + android.defaultConfig.versionCode
         }
-    }
+    }*/
 }
 
 dependencies {
@@ -41,19 +56,26 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
+
     compile 'com.android.support:appcompat-v7:26.0.2'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:26.0.2'
     compile 'com.android.support:recyclerview-v7:26.0.2'
     compile 'com.android.support:cardview-v7:26.0.2'
     compile 'com.android.support:support-v4:26.0.2'
-
     compile 'com.github.jrvansuita:MaterialAbout:0.1.8'
     compile 'com.yarolegovich:sliding-root-nav:1.1.0'
     compile 'com.yarolegovich:discrete-scrollview:1.3.0'
     compile 'saschpe.android:customtabs:1.0.7'
     compile 'com.wajahatkarim3.EasyFlipView:EasyFlipView:1.0.2'
     compile 'com.github.bumptech.glide:glide:4.2.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
     testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.0@aar') {
+        transitive = true;
+    }
 }
+
+
+apply plugin: 'com.google.gms.google-services'

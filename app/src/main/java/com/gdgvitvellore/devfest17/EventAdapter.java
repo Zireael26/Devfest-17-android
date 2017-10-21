@@ -77,7 +77,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
                             textView.setTextSize(16);
                         }
                     })
-                    .scaleY(scale).setDuration(150)
+                    .scaleY(scale).setDuration(100)
                     .start();
         }
 
@@ -95,7 +95,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
                             textView.setTextSize(12);
                         }
                     })
-                    .scaleY(scale).setDuration(150)
+                    .scaleY(scale).setDuration(100)
                     .start();
         }
 

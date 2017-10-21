@@ -51,7 +51,6 @@ public class SponsorFragment extends Fragment implements DiscreteScrollView.OnIt
 
     public static void smoothScrollToNextPosition(final DiscreteScrollView scrollView, int pos) {
         final RecyclerView.Adapter adapter = scrollView.getAdapter();
-        int itemCount = 11;
         int destination = pos + 1;
         if (adapter instanceof InfiniteScrollAdapter) {
             destination = ((InfiniteScrollAdapter) adapter).getClosestPosition(destination);
@@ -61,7 +60,6 @@ public class SponsorFragment extends Fragment implements DiscreteScrollView.OnIt
 
     public static void smoothScrollToPreviousPosition(final DiscreteScrollView scrollView, int pos) {
         final RecyclerView.Adapter adapter = scrollView.getAdapter();
-        int itemCount = 11;
         int destination = pos - 1;
         if (adapter instanceof InfiniteScrollAdapter) {
             destination = ((InfiniteScrollAdapter) adapter).getClosestPosition(destination);
@@ -81,17 +79,19 @@ public class SponsorFragment extends Fragment implements DiscreteScrollView.OnIt
         rootView = inflater.inflate(R.layout.fragment_sponsor, container, false);
 
         sponsorData = Arrays.asList(
-                new Sponsor(1, "balsamiq", "Title Sponsor", "https://balsamiq.com/", R.drawable.sponsor_one),
-                new Sponsor(2, "Google Developers", "Title Sponsor", "https://developers.google.com/", R.drawable.sponsor_two),
-                new Sponsor(3, "Gitlab", "Title Sponsor", "https://gitlab.com/", R.drawable.sponsor_three),
-                new Sponsor(4, "Skcript", "Title Sponsor", "https://skcript.com", R.drawable.sponsor_four),
-                new Sponsor(5, ".tech", "Title Sponsor", "http://get.tech/", R.drawable.sponsor_five),
-                new Sponsor(6, "Jetbrains", "Title Sponsor", "https://www.jetbrains.com/", R.drawable.sponsor_six),
-                new Sponsor(7, "iconscout", "Title Sponsor", "https://iconscout.com/", R.drawable.sponsor_seven),
-                new Sponsor(8, "Todoist", "Title Sponsor", "https://en.todoist.com/", R.drawable.sponsor_eight),
-                new Sponsor(9, "DoSelect", "Title Sponsor", "https://doselect.com/", R.drawable.sponsor_nine),
-                new Sponsor(10, "Docker", "Title Sponsor", "https://www.docker.com/", R.drawable.sponsor_ten),
-                new Sponsor(11, "npm", "Title Sponsor", "https://www.npmjs.com/", R.drawable.sponsor_eleven));
+                new Sponsor("TECHGIG", "Platform Sponsor", "https://www.techgig.com/", R.drawable.platform_sponsor),
+                new Sponsor("balsamiq", "Sponsor", "https://balsamiq.com/", R.drawable.sponsor_one),
+                new Sponsor("Google Developers", "Sponsor", "https://developers.google.com/", R.drawable.sponsor_two),
+                new Sponsor("GitLab", "Sponsor", "https://gitlab.com/", R.drawable.sponsor_three),
+                new Sponsor("Skcript", "Sponsor", "https://skcript.com", R.drawable.sponsor_four),
+                new Sponsor(".tech DOMAINS", "Sponsor", "http://get.tech/", R.drawable.sponsor_five),
+                new Sponsor("JetBrains", "Sponsor", "https://www.jetbrains.com/", R.drawable.sponsor_six),
+                new Sponsor("iconscout", "Sponsor", "https://iconscout.com/", R.drawable.sponsor_seven),
+                new Sponsor("todoist", "Sponsor", "https://en.todoist.com/", R.drawable.sponsor_eight),
+                new Sponsor("doselect", "Sponsor", "https://doselect.com/", R.drawable.sponsor_nine),
+                new Sponsor("docker", "Sponsor", "https://www.docker.com/", R.drawable.sponsor_ten),
+                new Sponsor("npm", "Sponsor", "https://www.npmjs.com/", R.drawable.sponsor_eleven),
+                new Sponsor("hackerearth", "Sponsor", "https://hackerearth.com", R.drawable.sponsor_twelve));
 
         currentSponsorName = (TextView) rootView.findViewById(R.id.sponsor_name);
         currentSponsorType = (TextView) rootView.findViewById(R.id.sponsor_type);

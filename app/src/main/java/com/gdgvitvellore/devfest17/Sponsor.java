@@ -9,10 +9,8 @@ public class Sponsor {
     private String sponsorType;
     private String sponsorWebsite;
     private int sponsorImage;
-    private int id;
 
-    public Sponsor(int it, String sponsorName, String sponsorType, String sponsorWebsite, int sponsorImage) {
-        this.id = id;
+    public Sponsor(String sponsorName, String sponsorType, String sponsorWebsite, int sponsorImage) {
         this.sponsorName = sponsorName;
         this.sponsorType = sponsorType;
         this.sponsorWebsite = sponsorWebsite;
@@ -33,9 +31,5 @@ public class Sponsor {
 
     public int getSponsorImage() {
         return sponsorImage;
-    }
-
-    public int getId() {
-        return id;
     }
 }

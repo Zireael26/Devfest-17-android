@@ -9,12 +9,14 @@ public class FAQ {
     private String answer;
     private int quesIcon;
     private int ansIcon;
+    private int cardBackground;
 
-    public FAQ(String question, String answer, int quesIcon, int ansIcon) {
+    public FAQ(String question, String answer, int quesIcon, int ansIcon, int cardBackground) {
         this.question = question;
         this.answer = answer;
         this.quesIcon = quesIcon;
         this.ansIcon = ansIcon;
+        this.cardBackground = cardBackground;
     }
 
     public String getQuestion() {
@@ -31,5 +33,9 @@ public class FAQ {
 
     public int getAnsIcon() {
         return ansIcon;
+    }
+
+    public int getCardBackground() {
+        return cardBackground;
     }
 }

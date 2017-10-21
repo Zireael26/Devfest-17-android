@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.wajahatkarim3.easyflipview.EasyFlipView;
@@ -20,6 +21,7 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
 
     private Context mContext;
     private ArrayList<FAQ> faqList;
+//    private Typeface quesFont, ansFont;
 
     FAQAdapter(Context mContext, ArrayList<FAQ> faqList) {
         this.mContext = mContext;
@@ -28,10 +30,12 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
 
     @Override
     public QNAViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        Context context = parent.getContext();
-        int layoutIdForListItem = R.layout.faq_item;
-        LayoutInflater inflater = LayoutInflater.from(context);
+        int layoutIdForListItem = R.layout.item_faq;
+        LayoutInflater inflater = LayoutInflater.from(mContext);
         boolean shouldAttachParentToImmediately = false;
+
+//        quesFont = Typeface.createFromAsset(mContext.getAssets(),  "fonts/Exo2-Regular.ttf");
+//        ansFont = Typeface.createFromAsset(mContext.getAssets(),  "fonts/Exo2-Regular.ttf");
 
         View view = inflater.inflate(layoutIdForListItem, parent, shouldAttachParentToImmediately);
 
@@ -41,8 +45,10 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
     @Override
     public void onBindViewHolder(final QNAViewHolder holder, int position) {
         holder.quesText.setText(faqList.get(position).getQuestion());
+//        holder.quesText.setTypeface(quesFont);
         holder.quesIcon.setImageResource(faqList.get(position).getQuesIcon());
         holder.ansText.setText(faqList.get(position).getAnswer());
+//        holder.ansText.setTypeface(ansFont);
         holder.ansIcon.setImageResource(faqList.get(position).getAnsIcon());
         holder.faqItem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +56,8 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
                 holder.faqItem.flipTheView();
             }
         });
+        holder.frontLayout.setBackgroundResource(faqList.get(position).getCardBackground());
+        holder.backLayout.setBackgroundResource(faqList.get(position).getCardBackground());
     }
 
     @Override
@@ -61,6 +69,7 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
         TextView quesText, ansText;
         ImageView ansIcon, quesIcon;
         EasyFlipView faqItem;
+        LinearLayout backLayout, frontLayout;
 
         QNAViewHolder(View view) {
             super(view);
@@ -69,6 +78,8 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
             ansIcon = (ImageView) view.findViewById(R.id.ansIcon);
             quesIcon = (ImageView) view.findViewById(R.id.quesIcon);
             faqItem = (EasyFlipView) view.findViewById(R.id.faq_item);
+            backLayout = (LinearLayout) view.findViewById(R.id.faq_card_back_layout);
+            frontLayout = (LinearLayout) view.findViewById(R.id.faq_card_front_layout);
         }
     }
 

@@ -24,7 +24,8 @@
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="24dp"
-            android:tint="#F0FFFFFF" />
+            android:tint="#F0FFFFFF"
+            android:contentDescription="@string/icon_for_faq_answer_card" />
 
         <LinearLayout
                 android:layout_width="match_parent"
@@ -41,7 +42,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:gravity="center_vertical"
-                android:text="answer goes here"
                 android:textColor="#000"
                 android:textSize="14sp" />
 

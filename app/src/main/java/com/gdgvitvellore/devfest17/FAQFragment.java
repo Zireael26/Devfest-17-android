@@ -8,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -23,7 +22,6 @@ public class FAQFragment extends Fragment {
     private RecyclerView faqRecyclerView;
     private FAQAdapter adapter;
     private ArrayList<FAQ> faqList = new ArrayList<>();
-    private TextView quesTextView, ansTextView;
 
     public FAQFragment() {
         // Required empty public constructor
@@ -31,6 +29,10 @@ public class FAQFragment extends Fragment {
 
     public static FAQFragment newInstance() {
         return new FAQFragment();
+    }
+
+    public void setUserVisibleHint() {
+
     }
 
     @Override
@@ -43,9 +45,6 @@ public class FAQFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         rootView = inflater.inflate(R.layout.fragment_faq, container, false);
-
-        quesTextView = (TextView) rootView.findViewById(R.id.questionText);
-        ansTextView = (TextView) rootView.findViewById(R.id.answerText);
 
         faqRecyclerView = (RecyclerView) rootView.findViewById(R.id.faq_recycler_view);
 

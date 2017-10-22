@@ -104,4 +104,6 @@ public class TimelineFragment extends Fragment implements DiscreteScrollView.Scr
     public void onScrollEnd(@NonNull EventAdapter.ViewHolder holder, int position) {
 
     }
+
 }
+

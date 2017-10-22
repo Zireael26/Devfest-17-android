@@ -29,6 +29,7 @@ android {
     buildTypes {
         release {
             minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -69,6 +70,7 @@ dependencies {
     compile 'saschpe.android:customtabs:1.0.7'
     compile 'com.wajahatkarim3.EasyFlipView:EasyFlipView:1.0.2'
     compile 'com.github.bumptech.glide:glide:4.2.0'
+    compile 'agency.tango.android:material-intro-screen:0.0.5'
     compile 'com.google.firebase:firebase-messaging:10.0.1'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'

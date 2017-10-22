@@ -15,7 +15,7 @@
     <LinearLayout
         android:id="@+id/faq_card_front_layout"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="140dp"
         android:layout_centerInParent="true"
         android:orientation="horizontal">
 
@@ -25,7 +25,8 @@
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="24dp"
-            android:tint="#F0FFFFFF" />
+            android:tint="#F0FFFFFF"
+            android:contentDescription="@string/question_icon_desc" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,7 +41,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:gravity="center_vertical"
-                android:text="question goes here"
                 android:textColor="#000"
                 android:textSize="20sp" />
 

@@ -17,7 +17,7 @@ import java.util.ArrayList;
  * Created by Raina on 17-10-2017.
  */
 
-public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
+class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
 
     private Context mContext;
     private ArrayList<FAQ> faqList;
@@ -32,12 +32,11 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
     public QNAViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         int layoutIdForListItem = R.layout.item_faq;
         LayoutInflater inflater = LayoutInflater.from(mContext);
-        boolean shouldAttachParentToImmediately = false;
 
 //        quesFont = Typeface.createFromAsset(mContext.getAssets(),  "fonts/Exo2-Regular.ttf");
 //        ansFont = Typeface.createFromAsset(mContext.getAssets(),  "fonts/Exo2-Regular.ttf");
 
-        View view = inflater.inflate(layoutIdForListItem, parent, shouldAttachParentToImmediately);
+        View view = inflater.inflate(layoutIdForListItem, parent, false);
 
         return new QNAViewHolder(view);
     }
@@ -73,13 +72,13 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
 
         QNAViewHolder(View view) {
             super(view);
-            quesText = (TextView) view.findViewById(R.id.questionText);
-            ansText = (TextView) view.findViewById(R.id.answerText);
-            ansIcon = (ImageView) view.findViewById(R.id.ansIcon);
-            quesIcon = (ImageView) view.findViewById(R.id.quesIcon);
-            faqItem = (EasyFlipView) view.findViewById(R.id.faq_item);
-            backLayout = (LinearLayout) view.findViewById(R.id.faq_card_back_layout);
-            frontLayout = (LinearLayout) view.findViewById(R.id.faq_card_front_layout);
+            quesText = view.findViewById(R.id.questionText);
+            ansText = view.findViewById(R.id.answerText);
+            ansIcon = view.findViewById(R.id.ansIcon);
+            quesIcon = view.findViewById(R.id.quesIcon);
+            faqItem = view.findViewById(R.id.faq_item);
+            backLayout = view.findViewById(R.id.faq_card_back_layout);
+            frontLayout = view.findViewById(R.id.faq_card_front_layout);
         }
     }
 

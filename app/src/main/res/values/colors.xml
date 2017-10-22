@@ -30,4 +30,19 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#BDBDBD</color>
 
+    <!-- Intro Sliders -->
+    <color name="first_slide_background">#4885ed</color>
+    <color name="first_slide_buttons">#f4c20d</color>
+
+    <color name="second_slide_background">#f4c20d</color>
+    <color name="second_slide_buttons">#4885ed</color>
+
+    <color name="third_slide_background">#db3236</color>
+    <color name="third_slide_buttons">#f4c20d</color>
+
+    <color name="custom_slide_background">#3cba54</color>
+    <color name="custom_slide_buttons">#db3236</color>
+
+    <!--Splash Screen-->
+    <item name="splash_background" type="color">@color/primary</item>
 </resources>

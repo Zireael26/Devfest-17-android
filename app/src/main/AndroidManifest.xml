@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gdgvitvellore.devfest17">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -10,8 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/WebsiteAppTheme">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
+            android:theme="@style/SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,10 +23,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/WebsiteAppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="b7ba028121aecea2a522a3290efdbf12ad0eb569" />
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

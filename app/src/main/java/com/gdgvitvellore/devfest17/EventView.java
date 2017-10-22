@@ -55,7 +55,7 @@ public class EventView extends LinearLayout {
         eventImage.animate()
                 .scaleX(1f).scaleY(1f)
                 .setInterpolator(new AccelerateDecelerateInterpolator())
-                .setDuration(100)
+                .setDuration(50)
                 .start();
     }
 

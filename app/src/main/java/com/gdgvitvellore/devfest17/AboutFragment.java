@@ -50,7 +50,7 @@ public class AboutFragment extends Fragment {
                 .addGitHubLink("GDGVIT")
                 .addFacebookLink("gdgvitvellore")
                 .addEmailLink("gdgvitvellore@gmail.com")
-                .addWebsiteLink("https://gdgvitvellore.com")
+                .addWebsiteLink("http://gdgvitvellore.com")
                 .addTwitterLink("gdgvit")
                 .addGooglePlusLink("+gdgvitvellore")
                 .addMoreFromMeAction("GDG VIT Vellore")
@@ -69,7 +69,7 @@ public class AboutFragment extends Fragment {
 
         aboutRelativeLayout.addView(view, params);
 
-
+        
         return rootView;
     }
 

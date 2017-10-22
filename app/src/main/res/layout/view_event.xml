@@ -13,7 +13,7 @@
 
     <ImageView
         android:id="@+id/event_image"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="240dp"
         android:layout_marginBottom="12dp"
         android:gravity="center"
@@ -33,7 +33,7 @@
             android:fontFamily="sans-serif-light"
             android:textAlignment="center"
             android:textColor="@color/accent"
-            android:textSize="20sp"
+            android:textSize="22sp"
             tools:text="Opening speech and introduction" />
         <!--android:textColor="@color/colorAccentGrad"/>-->
 
@@ -49,9 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:fontFamily="sans-serif-light"
         android:textColor="@color/textColorPrimaryGrad"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
     <Space
         android:layout_width="wrap_content"

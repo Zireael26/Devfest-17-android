@@ -74,8 +74,10 @@ public class IntroActivity extends MaterialIntroActivity {
 
     @Override
     public void onFinish() {
-        prefManager.setFirstTimeLaunch(false);
         super.onFinish();
+        prefManager.setFirstTimeLaunch(false);
+        startActivity(new Intent(IntroActivity.this, MainActivity.class));
+        finish();
     }
 
 

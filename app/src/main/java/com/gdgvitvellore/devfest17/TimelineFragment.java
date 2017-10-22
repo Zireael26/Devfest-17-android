@@ -58,7 +58,7 @@ public class TimelineFragment extends Fragment implements DiscreteScrollView.Scr
         timelineEventPicker.setAdapter(new EventAdapter(events));
         timelineEventPicker.addOnItemChangedListener(this);
         timelineEventPicker.addScrollStateChangeListener(this);
-        timelineEventPicker.setItemTransitionTimeMillis(20);
+        timelineEventPicker.setItemTransitionTimeMillis(50);
         timelineEventPicker.setItemTransformer(new ScaleTransformer.Builder()
                 .setMinScale(0.8f)
                 .build());

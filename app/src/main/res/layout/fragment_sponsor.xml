@@ -21,7 +21,6 @@
         android:fontFamily="sans-serif-light"
         android:textColor="@android:color/black"
         android:textSize="26sp"
-        android:textStyle="bold"
         tools:text="Balasmiq" />
 
     <Space
@@ -34,8 +33,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/accent"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
         tools:text="Title Sponsor" />
 
     <Space

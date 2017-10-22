@@ -43,7 +43,7 @@
                 android:layout_marginStart="16dp"
                 android:gravity="center_vertical"
                 android:textColor="#000"
-                android:textSize="14sp" />
+                android:textSize="13sp" />
 
         </LinearLayout>
 

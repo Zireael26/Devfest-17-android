@@ -49,6 +49,11 @@ class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.QNAViewHolder> {
         holder.ansText.setText(faqList.get(position).getAnswer());
 //        holder.ansText.setTypeface(ansFont);
         holder.ansIcon.setImageResource(faqList.get(position).getAnsIcon());
+
+        if (holder.faqItem.isBackSide())
+            holder.faqItem.flipTheView(false);
+
+
         holder.faqItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

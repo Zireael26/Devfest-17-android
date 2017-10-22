@@ -10,6 +10,44 @@
     <string name="check_to_pass">I accept terms and conditions.</string>
     <string name="error_message">Please accept terms and conditions first.</string>
     <string name="launch_intro_activity">Launch intro activity</string>
-    <string name="lorem_ipsum">Lorem ipsum \n\ndolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure</string>
+    <string name = "terms_and_conditions">THE HACKATHON IS VOID WHERE PROHIBITED BY LAW. BY PARTICIPATING, YOU AGREE TO THESE TERMS AND CONDITIONS.
 
+It is a NO ENTRY FEE event.
+1) Participation in the Hackathon constitutes Participant’s full and unconditional agreement to and acceptance of these Terms and Conditions.
+2) It is mandatory for participants to participate in ideathon or hackathon in teams of minimum of 2 members and maximum of 3 members. Participants need to attend the entirety of the duration of the respective events to be eligible for certificates.
+3) Scoring:
+A Judging panel with relevant expertise will be responsible for the evaluation of the pitches presented by the participants.
+The judging entries for Ideathon are as follows:-
+●	Ideation: Quality and innovative nature of the idea, originality and creativity. .
+●	Integration: Implementation plan of the problem statement with the technology used
+●	Pitch: Compelling nature of the idea
+●	Implementation Ideas: Plan of action for the idea
+●	Feasibility of the model
+●	Utilization of resources
+●	Implementation strategy/Business model
+●	Sustainability of the model presented
+●	Presentation-Clarity of Ideas
+●	Technical concepts used
+The judging Criteria for the Hackathon are as follows:-
+●	UI / UX
+●	Clean-code Quality
+●	Complexity
+●	Efficiency
+●	Originality
+●	Working Demo
+●	Pitch
+●	Business Potential
+The Entry that earns the highest overall score will win. The decisions of the judges will be final. In the event of a tie, judges will deliberate to determine the winner. Each Participant or team must be available during the judging period to demonstrate the participant’s or team’s Entry.
+Team members are free to call their friends for the pitching session. They can also participate in the QnA sessions for the teams
+4) The judging period may be extended by any length of time.  Determination of eligibility and compliance is at the sole discretion of the judging committee. The judging committee reserve the right to disqualify any entry if the entry or a Participant or a Participant’s team does not comply with these Terms.
+5)Participant represents and warrants that the Entry is and will be Participant’s own original work and does not and will not infringe the intellectual property or proprietary rights of any third party, including, without limitation, any third party patents, copyrights or trademarks.
+6) Participants hereby agree not to instigate, maintain or authorize any action, the Organising committee, Speakers, or any other person during the event.
+7) Nothing herein shall constitute an employment, joint venture, or partnership relationship between Participant and either or both of the Sponsors. Participants will not receive any compensation from Sponsors’ in connection with any Entries.
+8) IN NO EVENT WILL ORGANISING COMMITTEE BE LIABLE TO YOU FOR ANY DIRECT, SPECIAL, INCIDENTAL, EXEMPLARY, PUNITIVE ARISING OUT OF OR IN CONNECTION WITH YOUR PARTICIPATION IN THE HACKATHON, WHETHER SUCH LIABILITY ARISES FROM ANY CLAIM BASED UPON CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, AND WHETHER OR NOT SPONSORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE.
+10)  Some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential damages, so the above limitation or exclusion may not apply to you.
+11) Each team is responsible for determining the disposition of any intellectual property rights developed by its members in the course of participating in the Ideathon or the hackathon.
+12) ALL PRIZES WILL BE AWARDED TO EACH WINNING TEAM AS A WHOLE AND NOT TO EACH INDIVIDUAL MEMBER OF EACH WINNING TEAM.
+13) Participants not complying or not abiding to the rules and regulations will be facing consequences will are entirely at the discretion of the organising committee.
+
+</string>
 </resources>

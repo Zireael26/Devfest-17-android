@@ -10,7 +10,8 @@
     <string name="check_to_pass">I accept terms and conditions.</string>
     <string name="error_message">Please accept terms and conditions first.</string>
     <string name="launch_intro_activity">Launch intro activity</string>
-    <string name = "terms_and_conditions">THE HACKATHON IS VOID WHERE PROHIBITED BY LAW. BY PARTICIPATING, YOU AGREE TO THESE TERMS AND CONDITIONS.
+    <string name="terms_and_conditions">THE HACKATHON IS VOID WHERE PROHIBITED BY LAW. BY PARTICIPATING, YOU AGREE TO THESE TERMS AND CONDITIONS.
+
 
 \nIt is a NO ENTRY FEE event.
 \n\n1) Participation in the Hackathon constitutes Participant’s full and unconditional agreement to and acceptance of these Terms and Conditions.
@@ -50,4 +51,13 @@ Team members are free to call their friends for the pitching session. They can a
 \n\n13) Participants not complying or not abiding to the rules and regulations will be facing consequences will are entirely at the discretion of the organising committee.
 
 </string>
+    <string-array name="Suggestions">
+        <item>General Feedback</item>
+        <item>Suggest a feature</item>
+        <item>Have a question</item>
+        <item>Report a bug</item>
+        <item>Report an issue</item>
+    </string-array>
+    <string name="title_activity_tweets">TweetsActivity</string>
+
 </resources>

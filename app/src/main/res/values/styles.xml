@@ -35,5 +35,9 @@
         <item name="android:windowBackground">@drawable/splash_screen_background</item>
     </style>
 
+    <style name="WebsiteAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="WebsiteAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 
 </resources>

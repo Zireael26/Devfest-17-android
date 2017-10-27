@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.widget.SlidingDrawer;
 
 import com.yarolegovich.slidingrootnav.SlidingRootNav;
 import com.yarolegovich.slidingrootnav.SlidingRootNavBuilder;
@@ -21,10 +22,12 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnItemSelectedListener {
 
 
-    private static final int POS_TIMELINE = 0;
-    private static final int POS_FAQS = 1;
-    private static final int POS_SPONSORS = 2;
-    private static final int POS_ABOUT = 3;
+    private static final int POS_TIMELINE = 1;
+    private static final int POS_FAQS = 2;
+    private static final int POS_SPONSORS = 3;
+    private static final int POS_ABOUT = 4;
+    private static final int POS_TRENDING = 0;
+
 
 
     private String[] screenTitles;
@@ -53,7 +56,8 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
         screenTitles = loadScreenTitles();
 
         DrawerAdapter adapter = new DrawerAdapter(Arrays.asList(
-                createItemFor(POS_TIMELINE).setChecked(true),
+                createItemFor(POS_TRENDING).setChecked(true),
+                createItemFor(POS_TIMELINE),
                 createItemFor(POS_FAQS),
                 createItemFor(POS_SPONSORS),
                 createItemFor(POS_ABOUT),
@@ -81,7 +85,10 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
                 selectedScreen = SponsorFragment.newInstance();
                 break;
             case POS_ABOUT:
-                selectedScreen = AboutFragment.newInstance();
+                selectedScreen = AboutUsFragment.newInstance();
+                break;
+            case POS_TRENDING:
+                selectedScreen = TrendingFragment.newInstance();
                 break;
             default:
                 toolbar.setTitle(screenTitles[POS_TIMELINE]);
@@ -92,7 +99,6 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
         slidingRootNav.closeMenu(true);
         showFragment(selectedScreen);
     }
-
     private void showFragment(Fragment fragment) {
         getFragmentManager().beginTransaction()
                 .replace(R.id.container, fragment)

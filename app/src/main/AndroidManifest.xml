@@ -12,27 +12,35 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/WebsiteAppTheme">
-
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/SplashScreen"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreen">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".IntroActivity"
             android:theme="@style/WebsiteAppTheme" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="b7ba028121aecea2a522a3290efdbf12ad0eb569" />
+
+        <activity
+            android:name=".TweetsActivity"
+            android:label="@string/title_activity_tweets"
+            android:theme="@style/WebsiteAppTheme">
+
+        </activity>
     </application>
 
 </manifest>

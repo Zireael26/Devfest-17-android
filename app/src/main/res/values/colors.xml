@@ -2,6 +2,7 @@
 <resources>
 
     <!-- Gradient Theme Colors -->
+    <color name="colorPrimary">#077066</color>
     <color name="colorPrimaryGrad">#ffffffff</color>
     <color name="colorPrimaryDarkGrad">#ff30b7c3</color>
     <color name="colorAccentGrad">#ff36ccda</color>
@@ -42,6 +43,7 @@
 
     <color name="custom_slide_background">#3cba54</color>
     <color name="custom_slide_buttons">#db3236</color>
+    <color name="black">#1e1e1e</color>
 
     <!--Splash Screen-->
     <item name="splash_background" type="color">@color/primary</item>

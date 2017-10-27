@@ -1,0 +1,253 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_margin="2dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.gdgvitvellore.gdgvitvellore.Entity.AboutUs.AboutUsFragment"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/gdg"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="5dp"/>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+                <com.gdgvitvellore.devfest17.MontserratTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT US"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20sp"
+                    android:paddingTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_dark"
+                    android:textAlignment="center"/>
+                <com.gdgvitvellore.devfest17.MontserratTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GDG VIT Vellore is a non-profit developers group to learn share and know more about Google technologies.Our events are open to newbies,developers,managers and organizations who are interested in Google technologies or use them as a part of their projects"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="18dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#6D6D6D"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="7dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+            <com.gdgvitvellore.devfest17.MontserratTextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WHAT DO WE DO"
+                android:textAlignment="center"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_dark" />
+            <com.gdgvitvellore.devfest17.MontserratTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tech Talks"
+                android:textAlignment="center"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp" />
+            <com.gdgvitvellore.devfest17.MontserratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google talks are a grassroots-style series of presentation given by various technical experts spanning a wide spectrum of topics in technology and related areas."
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#6D6D6D"/>
+            <com.gdgvitvellore.devfest17.MontserratTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="DEV Fests"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp" />
+            <com.gdgvitvellore.devfest17.MontserratTextView
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="GDG Dev Fests are large scale, community-run events that offer speaker sessions across multiple product areas, hackathons, code labs and many more."
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textStyle="bold"
+                android:textColor="#6D6D6D"/>
+            <com.gdgvitvellore.devfest17.MontserratTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="Code School"
+                android:textAlignment="center"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="5dp" />
+            <com.gdgvitvellore.devfest17.MontserratTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google code school teaches web technologies in the comfort of your browser through video lessons, coding challenges and screencasts."
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textStyle="bold"
+                android:textColor="#6D6D6D"/>
+            <com.gdgvitvellore.devfest17.MontserratTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beta Testing"
+                android:textAlignment="center"
+                android:paddingTop="15dp"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+            <com.gdgvitvellore.devfest17.MontserratTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Beta Testing is the essence of developing a software. We test every aspect of our product before releasing it for the real-world exposure."
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#6D6D6D">
+            </com.gdgvitvellore.devfest17.MontserratTextView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <com.gdgvitvellore.devfest17.MontserratTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suggestions"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/primary_dark"/>
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_option"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:entries="@array/Suggestions"
+        android:textColor="@color/colorPrimary"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_feedback"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <com.gdgvitvellore.devfest17.MontserratEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/feedback"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="#000000"
+            android:ems="12"
+            android:inputType="text"
+            android:hint="Please write here..."
+            android:layout_gravity="center_horizontal"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:background="@drawable/buttonlayout"
+        android:id="@+id/submit"
+        android:fontFamily="sans-serif">
+        </Button>
+
+</LinearLayout>
+</ScrollView>

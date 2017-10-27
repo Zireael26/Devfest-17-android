@@ -52,20 +52,21 @@ public class AboutFragment extends Fragment {
                 .addEmailLink("gdgvitvellore@gmail.com")
                 .addWebsiteLink("http://gdgvitvellore.com")
                 .addTwitterLink("gdgvit")
-                .addGooglePlusLink("+gdgvitvellore")
-                .addMoreFromMeAction("GDG VIT Vellore")
-                .addInstagramLink("gdgvitvellore")
-                .addFiveStarsAction()
-                .setVersionNameAsAppSubTitle()
-                .addShareAction(R.string.app_name)
-                .setWrapScrollView(true)
-                .setLinksAnimated(true)
-                .setShowAsCard(true)
-                .setDividerColor(R.color.accent)
-                .setNameColor(R.color.textColorPrimaryGrad)
-                .setPhoto(R.drawable.cirularlogo)
-                .setCover(R.drawable.rectangularshit)
-                .build();
+//                .addGooglePlusLink("+gdgvitvellore")
+//                .addMoreFromMeAction("GDG VIT Vellore")
+//                .addInstagramLink("gdgvitvellore")
+//                .addFiveStarsAction()
+//                .setVersionNameAsAppSubTitle()
+//                .addShareAction(R.string.app_name)
+//                .setWrapScrollView(true)
+//                .setLinksAnimated(true)
+//                .setShowAsCard(true)
+//                .setDividerColor(R.color.accent)
+//                .setNameColor(R.color.textColorPrimaryGrad)
+//                .setPhoto(R.drawable.cirularlogo)
+//                .setCover(R.drawable.rectangularshit)
+//
+                    .build();
 
         aboutRelativeLayout.addView(view, params);
 

@@ -3,13 +3,12 @@ package com.gdgvitvellore.devfest17;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.EditText;
 
 /**
  * Created by tanmay on 20/1/17.
  */
 
-public class MontserratEditText extends EditText {
+public class MontserratEditText extends android.support.v7.widget.AppCompatEditText {
     public MontserratEditText(Context context) {
         super(context);
         init();

@@ -12,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.widget.SlidingDrawer;
 
 import com.yarolegovich.slidingrootnav.SlidingRootNav;
 import com.yarolegovich.slidingrootnav.SlidingRootNavBuilder;
@@ -22,11 +21,12 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnItemSelectedListener {
 
 
+    private static final int POS_TRENDING = 0;
     private static final int POS_TIMELINE = 1;
     private static final int POS_FAQS = 2;
     private static final int POS_SPONSORS = 3;
-    private static final int POS_ABOUT = 4;
-    private static final int POS_TRENDING = 0;
+    private static final int POS_SCRATCH = 4;
+    private static final int POS_ABOUT = 5;
 
 
 
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
                 createItemFor(POS_TIMELINE),
                 createItemFor(POS_FAQS),
                 createItemFor(POS_SPONSORS),
+                createItemFor(POS_SCRATCH),
                 createItemFor(POS_ABOUT),
                 new SpaceItem(48)));
         adapter.setListener(this);
@@ -75,6 +76,9 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
     public void onItemSelected(int position) {
         Fragment selectedScreen = null;
         switch (position) {
+            case POS_TRENDING:
+                selectedScreen = TrendingFragment.newInstance();
+                break;
             case POS_TIMELINE:
                 selectedScreen = TimelineFragment.newInstance();
                 break;
@@ -84,11 +88,11 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
             case POS_SPONSORS:
                 selectedScreen = SponsorFragment.newInstance();
                 break;
+            case POS_SCRATCH:
+                selectedScreen = ScratchFragment.newInstance();
+                break;
             case POS_ABOUT:
                 selectedScreen = AboutUsFragment.newInstance();
-                break;
-            case POS_TRENDING:
-                selectedScreen = TrendingFragment.newInstance();
                 break;
             default:
                 toolbar.setTitle(screenTitles[POS_TIMELINE]);

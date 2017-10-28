@@ -76,7 +76,7 @@ public class EventView extends LinearLayout {
             case D14:
                 return R.drawable.pizza;
             case D21:
-                return R.drawable.pizza;
+                return R.drawable.fries;
             case D22:
                 return R.drawable.pitch;
             case D23:

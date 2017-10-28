@@ -6,15 +6,17 @@
         <item>Timeline</item>
         <item>FAQs</item>
         <item>Sponsors</item>
+        <item>Scratch To Win</item>
         <item>About</item>
 
     </string-array>
 
     <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_whatshot_black_24dp</item>
         <item>@drawable/ic_timeline_black_24dp</item>
         <item>@drawable/ic_faq_24dp</item>
         <item>@drawable/ic_local_atm_black_24dp</item>
-        <item>@drawable/ic_about_black_24dp</item>
+        <item>@drawable/ic_card_giftcard_black_24dp</item>
         <item>@drawable/ic_about_black_24dp</item>
     </array>
 

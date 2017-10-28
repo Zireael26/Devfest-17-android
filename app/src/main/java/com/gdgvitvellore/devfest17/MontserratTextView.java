@@ -2,13 +2,12 @@ package com.gdgvitvellore.devfest17;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 /**
  * Created by tanmay on 20/1/17.
  */
 
-public class MontserratTextView extends TextView {
+public class MontserratTextView extends android.support.v7.widget.AppCompatTextView {
     public MontserratTextView(Context context) {
         super(context);
         init();

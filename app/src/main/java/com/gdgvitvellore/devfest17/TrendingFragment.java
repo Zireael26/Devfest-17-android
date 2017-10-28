@@ -13,11 +13,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
-import com.twitter.sdk.android.core.DefaultLogger;
-import com.twitter.sdk.android.core.Twitter;
-import com.twitter.sdk.android.core.TwitterAuthConfig;
-import com.twitter.sdk.android.core.TwitterConfig;
+import com.twitter.sdk.android.core.Callback;
+import com.twitter.sdk.android.core.Result;
+import com.twitter.sdk.android.core.TwitterException;
+import com.twitter.sdk.android.core.models.Tweet;
 import com.twitter.sdk.android.tweetui.CompactTweetView;
+import com.twitter.sdk.android.tweetui.TweetUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -60,13 +61,8 @@ public class TrendingFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        TwitterConfig config = new TwitterConfig.Builder(context)
-                .logger(new DefaultLogger(Log.DEBUG))
-                .twitterAuthConfig(new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET))
-                .build();
 
 
-        Twitter.initialize(config);
     }
 
     @Nullable
@@ -228,7 +224,17 @@ public class TrendingFragment extends Fragment {
         public void onBindViewHolder(final TrendinggViewHolder holder, int position) {
             Log.v("exc", tweetsIds.get(position) + "");
 
+            TweetUtils.loadTweet(tweetsIds.get(position), new Callback<Tweet>() {
+                @Override
+                public void success(Result<Tweet> result) {
 
+                }
+
+                @Override
+                public void failure(TwitterException exception) {
+
+                }
+            });
         }
 
         @Override

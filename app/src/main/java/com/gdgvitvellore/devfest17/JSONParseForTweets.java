@@ -1,16 +1,12 @@
 package com.gdgvitvellore.devfest17;
 
-        import android.text.Html;
         import android.util.Log;
 
         import org.json.JSONArray;
         import org.json.JSONException;
         import org.json.JSONObject;
 
-        import java.text.ParseException;
-        import java.text.SimpleDateFormat;
         import java.util.ArrayList;
-        import java.util.Date;
         import java.util.List;
 
 /**
@@ -21,12 +17,9 @@ public class JSONParseForTweets {
     public static String[] tweetText;
     public static String[] tweetImageUrl;
     public static String[] time;
- 
-    
-    private JSONArray tweetJSONArray=null;
-
+    public static String[] userName;
     List<TweetModel> tweetModelList;
-
+    private JSONArray tweetJSONArray = null;
     private String json;
 
     public JSONParseForTweets(String json){
@@ -46,6 +39,8 @@ public class JSONParseForTweets {
             tweetText=new String[tweetJSONArray.length()];
             tweetImageUrl=new String[tweetJSONArray.length()];
             time=new String[tweetJSONArray.length()];
+            userName = new String[tweetJSONArray.length()];
+
             tweetModelList=new ArrayList<TweetModel>();
 
             for (int i=0;i< tweetJSONArray.length();i++){
@@ -54,9 +49,11 @@ public class JSONParseForTweets {
                 tweetText[i]=object.getString("text");
                 tweetImageUrl[i]= object.getJSONObject("user").getString("profile_image_url");
                 time[i]=object.getString("created_at");
+                userName[i] = object.getString("");
                 TweetModelObject.setTime(time[i]);
                 TweetModelObject.setTweetImageUrl(tweetImageUrl[i]);
                 TweetModelObject.setTweetText(tweetText[i]);
+                TweetModelObject.setUserName(userName[i]);
                 Log.v("tweetText",tweetText[i]);
                 Log.v("tweetImage",tweetImageUrl[i]);
                 Log.v("tweetTime",time[i]);

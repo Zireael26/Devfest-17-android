@@ -13,9 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/WebsiteAppTheme">
         <activity
-            android:name=".SplashActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SplashScreen">
+            android:name=".TweetsDisplayActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/WebsiteAppTheme">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +28,6 @@
             </intent-filter>
 
         </activity>
-        <activity
-            android:name=".IntroActivity"
-            android:theme="@style/WebsiteAppTheme" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />

@@ -2,13 +2,11 @@ package com.gdgvitvellore.devfest17;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import com.twitter.sdk.android.tweetui.TweetView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,14 +17,11 @@ import java.util.List;
  * Created on 9/17/2017
  */
 public class TrendingAdapter extends android.support.v7.widget.RecyclerView.Adapter<TrendingAdapter.ViewHolder> {
+    List<Long> mDataList;
     private Context mContext;
-
-    List<TweetModel> mDataList;
-
-
     private ClickListener clickListener;
 
-    public TrendingAdapter(Context context,ArrayList<TweetModel> tweets) {
+    public TrendingAdapter(Context context, ArrayList<Long> tweets) {
 
         this.mDataList = tweets;
         this.mContext = context;
@@ -50,15 +45,22 @@ public class TrendingAdapter extends android.support.v7.widget.RecyclerView.Adap
 
         //TODO: add your code
 
-        holder.time.setText(mDataList.get(position).getTime().toString());
-        holder.tvTitle.setText("Title");
-      //  Glide.with(mContext).load(mDataList.get(position).getTweetImageUrl());
 
-        Glide.with(holder.itemView.getContext())
-                .load(mDataList.get(position).getTweetImageUrl())
-                .into(holder.tweetImage);
+        Log.v("exc", mDataList.get(position) + "");
 
-        holder.tvtweetContent.setText(mDataList.get(position).getTweetText());
+       /* TweetUtils.loadTweet(mDataList.get(position), new Callback<Tweet>() {
+            @Override
+            public void success(Result<Tweet> result) {
+                holder.tweetView.removeAllViews();
+                holder.tweetView.addView(new TweetView(mContext, result.data));
+            }
+
+            @Override
+            public void failure(TwitterException exception) {
+                Log.e("failed", "Sign in failure", exception);
+            }
+        });
+*/
 
 
     }
@@ -72,32 +74,19 @@ public class TrendingAdapter extends android.support.v7.widget.RecyclerView.Adap
         return mDataList.size();
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
-
-        TextView time;
-        TextView tvTitle;
-        ImageView tweetImage;
-        TextView tvtweetContent;
-
-
-        public ViewHolder(View itemView) {
-            super(itemView);
-
-            time = itemView.findViewById(R.id.evDateTime);
-            tvTitle = itemView.findViewById(R.id.evTitle);
-            tweetImage = itemView.findViewById(R.id.evImg);
-            tvtweetContent = itemView.findViewById(R.id.tvContent);
-
-            /*tvAccessionNo = itemView.findViewById(R.id.lbl_accession);
-            tvName = itemView.findViewById(R.id.lbl_prot_name);
-            tvSequence = itemView.findViewById(R.id.lbl_seq);
-            tvFullName = itemView.findViewById(R.id.lbl_full_name);*/
-
-        }
-    }
-
     public interface ClickListener {
         void onClick(View view, int position);
+    }
+
+    class ViewHolder extends RecyclerView.ViewHolder {
+
+        TweetView tweetView;
+        public ViewHolder(View itemView) {
+            super(itemView);
+            tweetView = itemView.findViewById(R.id.city_hall_tweet);
+
+
+        }
     }
 
 }

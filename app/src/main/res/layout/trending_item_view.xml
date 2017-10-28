@@ -1,66 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+
+<com.twitter.sdk.android.tweetui.CompactTweetView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:twittersdk="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/city_hall_tweet"
+    style="@style/tw__TweetDarkWithActionsStyle"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="32dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        >
+    twittersdk:tw__tweet_id="521061104445693952">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="23 May, 10:47 PM"
-            android:id="@+id/evDateTime"
-            android:textColor="@color/black"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Google I/O Highlights"
-            android:textSize="22dp"
-            android:textColor="@color/black"
-            android:id="@+id/evTitle"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp"
-            >
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:id="@+id/evImg"
-                android:src="@drawable/hack"
-                android:scaleType="centerCrop"
-                />
-
-            <TextView
-                android:layout_marginLeft="16dp"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="UniProt is a freely accessible database of protein sequence and functional information, many entries being derived from genome sequencing projects. It contains a "
-                android:id="@+id/tvContent"
-                />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="24dp"
-        android:background="#dedede"/>
-</LinearLayout>
+</com.twitter.sdk.android.tweetui.CompactTweetView>

@@ -60,5 +60,7 @@ Team members are free to call their friends for the pitching session. They can a
     </string-array>
     <string name="title_activity_tweets">TweetsActivity</string>
 
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">r8AmjQZ8hA9uyTdq2yNTL0pVa</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">orvzvJOadXsPKseaRNzuIHGmul2v7JKB3nsJIS7hcIdMgDptTG</string>
 
 </resources>

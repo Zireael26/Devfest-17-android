@@ -8,6 +8,15 @@ public class TweetModel {
     private String time;
     private String tweetImageUrl;
     private String tweetText;
+    private String userName;
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
     public String getTime() {
         return time;

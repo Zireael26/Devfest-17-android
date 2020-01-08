@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1078090068683",
+    "firebase_url": "https://devfest-17-android.firebaseio.com",
+    "project_id": "devfest-17-android",
+    "storage_bucket": "devfest-17-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078090068683:android:32436bc44da471b4",
+        "android_client_info": {
+          "package_name": "com.gdgvitvellore.devfest17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078090068683-crfrrobo5c0ajslthp9p3j4rhh0nl83e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gdgvitvellore.devfest17",
+            "certificate_hash": "3c6996662c36eb809a8a0833229edbb88de0966b"
+          }
+        },
+        {
+          "client_id": "1078090068683-8kmkagoegcucb5d52t64jmaq3gvjb0pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF9W6K6inlKjx7CMW1mlKOO5oRs7pjFWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078090068683-8kmkagoegcucb5d52t64jmaq3gvjb0pa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

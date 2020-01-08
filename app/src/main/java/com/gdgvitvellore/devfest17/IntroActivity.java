@@ -3,13 +3,13 @@ package com.gdgvitvellore.devfest17;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.FloatRange;
-import android.support.annotation.Nullable;
+import androidx.annotation.FloatRange;
+import androidx.annotation.Nullable;
 import android.view.View;
 
-import agency.tango.materialintroscreen.MaterialIntroActivity;
-import agency.tango.materialintroscreen.SlideFragmentBuilder;
-import agency.tango.materialintroscreen.animations.IViewTranslation;
+import io.github.dreierf.materialintroscreen.MaterialIntroActivity;
+import io.github.dreierf.materialintroscreen.SlideFragmentBuilder;
+import io.github.dreierf.materialintroscreen.animations.IViewTranslation;
 
 
 public class IntroActivity extends MaterialIntroActivity {

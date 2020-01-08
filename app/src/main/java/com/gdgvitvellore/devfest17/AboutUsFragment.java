@@ -3,7 +3,7 @@ package com.gdgvitvellore.devfest17;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
+import com.google.android.material.textfield.TextInputLayout;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;

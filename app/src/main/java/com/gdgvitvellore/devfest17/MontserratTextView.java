@@ -7,7 +7,7 @@ import android.util.AttributeSet;
  * Created by tanmay on 20/1/17.
  */
 
-public class MontserratTextView extends android.support.v7.widget.AppCompatTextView {
+public class MontserratTextView extends androidx.appcompat.widget.AppCompatTextView {
     public MontserratTextView(Context context) {
         super(context);
         init();

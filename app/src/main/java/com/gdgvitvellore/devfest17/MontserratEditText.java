@@ -8,7 +8,7 @@ import android.util.AttributeSet;
  * Created by tanmay on 20/1/17.
  */
 
-public class MontserratEditText extends android.support.v7.widget.AppCompatEditText {
+public class MontserratEditText extends androidx.appcompat.widget.AppCompatEditText {
     public MontserratEditText(Context context) {
         super(context);
         init();

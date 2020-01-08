@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gdgvitvellore.devfest17.AboutFragment">
+    tools:context="com.gdgvitvellore.devfest17.AboutFragment"
+    android:orientation="vertical">
 
 </RelativeLayout>

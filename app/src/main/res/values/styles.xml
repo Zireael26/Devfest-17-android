@@ -1,13 +1,6 @@
 <resources>
 
     <!-- Gradient application theme. -->
-    <style name="GradientAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorControlNormal">#F0F5F5F5</item>
-        <item name="android:textColorPrimary">#F0F5F5F5</item>
-        <item name="colorPrimary">@color/colorPrimaryGrad</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDarkGrad</item>
-        <item name="colorAccent">@color/colorAccentGrad</item>
-    </style>
 
     <style name="ClickableImageView">
         <item name="android:clickable">true</item>

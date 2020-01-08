@@ -4,32 +4,19 @@
     <!-- Gradient Theme Colors -->
     <color name="colorPrimary">#077066</color>
     <color name="colorPrimaryGrad">#ffffffff</color>
-    <color name="colorPrimaryDarkGrad">#ff30b7c3</color>
-    <color name="colorAccentGrad">#ff36ccda</color>
     <color name="grayIconTintGrad">#727272</color>
     <color name="textColorPrimaryGrad">#212121</color>
     <color name="textColorSecondaryGrad">#757575</color>
 
-    <color name="sponsorGalleryAccentGrad">#84ceca</color>
     <color name="sponsorGallerySecondaryGrad">#727272</color>
     <color name="sponsorGalleryFabRippleGrad">#51b2ac</color>
-
-    <color name="gradient_blue_endGrad">#ff0eefbb</color>
-    <color name="gradient_blue_startGrad">#ff39c2df</color>
-    <color name="gradient_launch_endGrad">#ff39c2df</color>
-    <color name="gradient_launch_startGrad">#ff00ffb0</color>
-    <color name="gradient_red_endGrad">#ffff8000</color>
-    <color name="gradient_red_startGrad">#ffff2e2c</color>
 
     <!-- New Website-like theme colors -->
     <color name="primary">#2196F3</color>
     <color name="primary_dark">#1976D2</color>
-    <color name="primary_light">#BBDEFB</color>
     <color name="accent">#FF9800</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#757575</color>
-    <color name="icons">#FFFFFF</color>
-    <color name="divider">#BDBDBD</color>
 
     <!-- Intro Sliders -->
     <color name="first_slide_background">#4885ed</color>
